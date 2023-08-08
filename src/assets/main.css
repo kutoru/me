@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500,600");
+
+:root {
+  /* color-scheme: dark; */
+  /* constant */
+  --background: rgba(50, 50, 50, 0.67);
+  --background-l: rgb(75, 75, 75);
+  --foreground: rgb(255, 255, 255);
+  --foreground-d: rgb(150, 150, 150);
+  --font-weight: 400;
+  --font-weight-sb: 500;
+  --font-weight-b: 600;
+  --shadow-color: rgb(0, 0, 0, 0.5);
+  --shadow-s-color: rgb(0, 0, 0, 0.33);
+  /* --shadow-h-color: rgb(80, 160, 145, 0.67);
+  --shadow-hs-color: rgba(80, 160, 145, 0.5); */
+  --shadow-h-color: rgba(235, 75, 75, 0.5);
+  --shadow-hs-color: rgba(235, 75, 75, 0.33);
+  /* dynamic */
+  --spacer: 10px;
+  --shadow: 0 0 7px 3px var(--shadow-color);
+  --shadow-s: 0 0 7px 3px var(--shadow-s-color);
+  --shadow-h: 0 0 7px 3px var(--shadow-h-color);
+  --shadow-hs: 0 0 7px 3px var(--shadow-hs-color);
+  --font-size-s: 12px;
+  --font-size: 16px;
+  --font-size-t: 20px;
+  --font-size-h: 24px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  font-weight: var(--font-weight);
+  font-size: 100%;
+}
+
+body, #app {
+  height: 100%;
+  min-height: 100dvh;
+  min-width: 300px;
+
+  background-image: linear-gradient(135deg, rgb(175, 80, 80), rgb(65, 134, 122));
+  /* background-image: linear-gradient(135deg, rgb(175, 80, 80), #41867a); */
+  /* background-image: linear-gradient(135deg, rgb(175, 80, 80), #50afaf); */
+  /* background-image: linear-gradient(135deg, #721919, #197262); */
+  /* background-image: linear-gradient(135deg, #e16162, #005e59); */
+  color: var(--foreground);
+
+  font-family: "Poppins", "Rubik", "sans-serif";
+  font-size: var(--font-size);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+::selection, ::-moz-selection {
+  background: rgb(90, 165, 185);
+}
+
+a, a:visited {
+  color: rgb(0, 190, 255);
+  font-weight: var(--font-weight-sb);
+}
+
+a:hover {
+  color: rgb(0, 125, 190);
+  font-weight: var(--font-weight-sb);
+}
+
+.center {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --spacer: 20px;
+    --shadow: 0 0 10px 5px var(--shadow-color);
+    --shadow-s: 0 0 10px 5px var(--shadow-s-color);
+    --shadow-h: 0 0 10px 5px var(--shadow-h-color);
+    --shadow-hs: 0 0 10px 5px var(--shadow-hs-color);
+    --font-size-s: 20px;
+    --font-size: 25px;
+    --font-size-t: 30px;
+    --font-size-h: 35px;
+  }
+}

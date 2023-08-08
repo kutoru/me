@@ -1,0 +1,28 @@
+{
+  "en": {
+    "navbar": {
+      "normal": {
+        "about": "About me",
+        "projects": "My projects"
+      },
+      "small": {
+        "about": "Me",
+        "projects": "Projects"
+      }
+    },
+    "footer": "You can contact me and ask questions at: <a href=\"mailto:kutoru.work@gmail.com\">kutoru.work@gmail.com</a>"
+  },
+  "ru": {
+    "navbar": {
+      "normal": {
+        "about": "Обо мне",
+        "projects": "Мои проекты"
+      },
+      "small": {
+        "about": "Я",
+        "projects": "Проекты"
+      }
+    },
+    "footer": "Вы можете связаться со мной и задать вопросы здесь: <a href=\"mailto:kutoru.work@gmail.com\">kutoru.work@gmail.com</a>"
+  }
+}
